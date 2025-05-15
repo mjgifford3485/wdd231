@@ -10,7 +10,7 @@
 
 header {
     background-color: var(--background-color2);
-    max-width: 1200px;
+    max-width: 900px;
 }
 
 header span {
@@ -95,7 +95,6 @@ h2 {
     color: var(--main-color1);
     text-align: center;
     background-color: var(--background-color2);
-    max-width: 1200px;
     font-family: var(--header-font);
     margin-top: 0;
 }
@@ -182,7 +181,7 @@ footer {
     font-family: var(--main-font);
     background-color: var(--background-color1);
     color: var(--main-color1);
-    max-width: 1200px;
+    max-width: 900px;
     text-align: center;
     border: 1px solid var(--border);
 }
