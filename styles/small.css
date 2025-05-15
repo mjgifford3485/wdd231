@@ -171,6 +171,13 @@ section {
     background-color: var(--background-color2);
 }
 
+.credit-info {
+    font-family: var(--main-font);
+    color: var(--main-color2);
+    background-color: var(--background-color1);
+    text-align: center;
+}
+
 footer {
     font-family: var(--main-font);
     background-color: var(--background-color1);

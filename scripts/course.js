@@ -94,6 +94,10 @@ function displayCourses(filter = "all") {
         tile.innerHTML = `<p>${course.subject} ${course.number}: ${course.title}</p>`;
         tileContainer.appendChild(tile);
     });
+
+    const totalCredits = filtered.reduce((sum, course) => sum + course.credits, 0);
+    const creditsDisplay = document.getElementById("total-credits");
+    creditsDisplay.textContent = `The total number of credits for the courses listed below: ${totalCredits}`;
 }
 
 buttons.forEach(button => {

@@ -22,6 +22,7 @@
       width: fit-content;
       margin-left: 0;
       margin-right: auto;
+      max-width: 900px;
   }
 
     .certificate {
