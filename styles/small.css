@@ -22,9 +22,11 @@ header span {
     font-size: 2rem;
 }
 
-img {
+.profile {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     margin: 20px;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 #menu {
@@ -118,6 +120,7 @@ section {
 
 .location img {
     max-width: 200px;
+    max-height: 125px;
 }
 
 .certificate {
