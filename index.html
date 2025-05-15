@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wdd231 - Matthew Gifford - Homepage</title>
+    <meta name="author" content="Matthew Gifford">
+    <meta name="description" content="Course Homepage for week 1 assignemnt.">
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Red+Hat+Text:wght@600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <span><img src="images/profile.webp" alt="profile picture">Matthew Gifford</span>
+        <button id="menu" aria-label="navigation menu button"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="home" class="active">Home</a></li>
+                <li><a href="chamber.html" title="chamber">Chamber</a></li>
+                <li><a href="final.html" title="final">Final</a></li>
+                <li><a href="github.html" title="github profile">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/mjgifford3485" title="linkedin">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div>
+            <section class="courseWork">
+                <h2>Course Work</h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
+            <section class="location">
+                <h2>Seattle, Washington</h2>
+                <figure>
+                    <img src="images/seattle.webp" alt="seattle temple">
+                    <figcaption>Seattle Temple at night</figcaption>
+                </figure>
+            </section>
+            <section class="certificate">
+                <h2>Web and Computer Programming Certificate</h2>
+                <div id="filters">
+                    <button data-filter="all">All Courses</button>
+                    <button data-filter="WDD">WDD Courses</button>
+                    <button data-filter="CSE">CSE Courses</button>
+                </div>
+                <div id="course-tiles"></div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>©️ <span id="currentyear"></span> 🟠 Matthew Gifford 🟠 Washington</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

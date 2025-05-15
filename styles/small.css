@@ -1,0 +1,187 @@
+:root {
+    --main-color1: #153C89;
+    --main-color2: #722A08;
+    --background-color1: #DADAD9;
+    --background-color2: #ACECDC;
+    --border: black;
+    --header-font: "Pattaya", sans-serif;
+    --main-font: "Red Hat Text", sans-serif;
+}
+
+header {
+    background-color: var(--background-color2);
+    max-width: 1200px;
+}
+
+header span {
+    font-family: var(--header-font);
+    color: var(--main-color2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+img {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+#menu::before {
+    content: "☰";
+    color: var(--main-color2);
+}
+
+#menu.open::before {
+    content: "X";
+    color: var(--main-color2);
+}
+
+.navigation {
+    display: none;
+    flex-direction: column;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: var(--background-color1);
+    max-width: 1200px;  
+     
+}
+
+nav a {
+    display: block;
+    border: 1px solid var(--border);
+    padding: 10px;
+    text-align: center;
+    color: var(--main-color1);
+}
+
+a:hover {
+    color: var(--main-color2);
+    background-color: var(--background-color2);
+} 
+
+.active {
+    color: var(--main-color2);
+    background-color: var(--background-color2);
+}
+
+.active::after {
+    content: " ✔";
+    color: var(--main-color2);
+}
+
+main {
+    display: block;
+    align-items: right;
+}
+
+h1 {
+    font-family: var(--header-font);
+    color: var(--main-color1);
+}
+
+h2 {
+    color: var(--main-color1);
+    text-align: center;
+    background-color: var(--background-color2);
+    max-width: 1200px;
+    font-family: var(--header-font);
+    margin-top: 0;
+}
+
+div {
+    display: block;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    border: 1px solid var(--border);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    background-color: var(--background-color1);
+}
+
+.location {
+    text-align: center;
+}
+
+.location img {
+    max-width: 200px;
+    max-height: auto;
+}
+
+.certificate {
+    margin-bottom: 30px;
+}
+
+#filters {
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#filters button {
+    padding: 10px 20px;
+    width: 100%;
+    background-color: var(--background-color2);
+    color: var(--main-color1);
+    font-family: var(--header-font);
+}
+
+#filters button:hover {
+    color: var(--background-color2);
+    background-color: var(--main-color1);
+}
+
+#course-tiles {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+
+.tile {
+    border: 1px solid var(--border);
+    text-align: center;
+    font-family: var(--main-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.complete {
+    color: var(--background-color2);
+    background-color: var(--main-color2);
+}
+
+.incomplete {
+    color: var(--main-color2);
+    background-color: var(--background-color2);
+}
+
+footer {
+    font-family: var(--main-font);
+    background-color: var(--background-color1);
+    color: var(--main-color1);
+    max-width: 1200px;
+    text-align: center;
+    border: 1px solid var(--border);
+}
