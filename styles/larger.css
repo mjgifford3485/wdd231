@@ -6,26 +6,23 @@
     .navigation {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: start;
+        width: auto;
     }
 
     nav ul li {
         width: 100%;
     }
 
-    main {
-        display: block;
-        align-items: left;
-    }
-
-    div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 20px;
-    max-width: 1050px;
-    margin: auto;
-    }
+  .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      justify-content: start;
+      width: fit-content;
+      margin-left: 0;
+      margin-right: auto;
+  }
 
     .certificate {
     grid-column: 1/3;
@@ -37,10 +34,14 @@
     }
 
     #course-tiles {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        justify-items: start;
+        justify-content: start;
+        width: 100%;
+        margin-left: 0;
+        margin-right: auto;
     }
 
     .tile {
