@@ -1,0 +1,69 @@
+:root {
+    --main-color1: #153C89;
+    --main-color2: #722A08;
+    --background-color1: #DADAD9;
+    --background-color2: #ACECDC;
+    --border: black;
+    --header-font: "Pattaya", sans-serif;
+    --main-font: "Red Hat Text", sans-serif;
+}
+
+header {
+    max-width: 800px;
+    padding: 20px;
+}
+
+header div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: var(--background-color1);
+}
+
+.navigation {
+    list-style-type: none;
+
+}
+
+.navigation a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navigation a .active {
+    text-decoration: underline;
+}
+
+.logo {
+    border: 1px solid var(--border);
+    background-color: var(--background-color2);
+    padding: 10px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color2);
+}
+
+.title h1,
+.title p {
+    margin: 0;
+}
+
+.hero {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    display: grid;
+    font-size: .6rem;
+}
+
+footer img {
+    height: 24px;
+    width: 24px;
+}

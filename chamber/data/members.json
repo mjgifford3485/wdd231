@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Orange Computers",
+            "address": "601 Union St, Renton, Wa 98056",
+            "phonenum": "(206) 555-7753",
+            "website": "www.orange.com",
+            "image": "../images/orange.webp",
+            "level": "2"
+        },
+        {
+            "name": "Death Valley Shipping",
+            "address": "410 Terry Ave N, Renton, Wa 98056",
+            "phonenum": "(206) 555-4331",
+            "website": "www.dvs.com",
+            "image": "../images/desert.webp",
+            "level": "3"
+        },
+        {
+            "name": "Mages of the Prairie",
+            "address": "1600 Lind Ave SW, Renton, Wa 98057",
+            "phonenum": "(425) 555-6500",
+            "website": "www.mages.com",
+            "image": "../images/mage.webp",
+            "level": "2"
+        },
+        {
+            "name": "Queen and Rabbits Appliances",
+            "address": "4608 NE Sunset Blvd. Renton, Wa 98056",
+            "phonenum": "(425) 555-0600",
+            "website": "www.queenandrabbits.com",
+            "image": "../images/bunny.webp",
+            "level": "1"
+        },
+        {
+            "name": "Gigasoft Computers",
+            "address": "1 Gigasoft Way, Renton, Washington 98056",
+            "phonenum": "(425) 555-6214",
+            "website": "www.gigasoft.com",
+            "image": "../images/computer.webp",
+            "level": "3"
+        },
+        {
+            "name": "3 Amigos Maxican Restaurant",
+            "address": "10707 SE Carr Rd, Renton, WA 98055",
+            "phonenum": "(425) 555-9104",
+            "website": "www.3amigosmexicanrestaurant.com",
+            "image": "../images/amigos.webp",
+            "level": "1"
+        },
+        {
+            "name": "Renton History Museum",
+            "address": "235 Mill Ave, Renton, Wa S98057",
+            "phonenum": "425-555-6440",
+            "website": "www.rentonhistorymuseum.gov",
+            "image": "../images/museum.webp",
+            "level": "2"
+        }
+    ]
+}
