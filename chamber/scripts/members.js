@@ -1,7 +1,8 @@
 const cards = document.querySelector('#cards');
+const url = 'https://mjgifford3485.github.io/wdd231/chamber/data/members.json'
 
 async function getMemberData() {
-    const response = await fetch('../data/members.json');
+    const response = await fetch(url);
     const data = await response.json();
     console.table(data.members);
     // displayBusinesses(data.businesses);
