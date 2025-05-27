@@ -3,9 +3,23 @@
             display: flex;
             flex-direction: row;
         }
+    
+    #menu {
+        display: none;
+    }
+
+    .header-bar {
+        align-items: end;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+        max-width: 150px;
+        width: 100%;
+    }
 
     footer {
-        max-width: 800px;
+        max-width: 900px;
         display: flex;
         flex-direction: row;
         justify-content:  space-between;

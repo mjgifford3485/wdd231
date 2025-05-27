@@ -3,41 +3,100 @@
     --main-color2: #722A08;
     --background-color1: #DADAD9;
     --background-color2: #ACECDC;
-    --border: black;
+    --border: 1px solid black;
     --header-font: "Pattaya", sans-serif;
     --main-font: "Red Hat Text", sans-serif;
 }
 
-header {
-    max-width: 800px;
-    padding: 20px;
+h1,
+h2 {
+    font-family: var(--header-font);
 }
 
-header div {
+p {
+    font-family: var(--main-font);
+}
+
+header {
+    max-width: 900px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.header-bar {
     display: flex;
-    align-items: flex-end;
+    align-items: start;
     justify-content: space-between;
     background-color: var(--background-color1);
 }
 
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--main-color1);
+    margin-left: auto;
+}
+
+#menu::before {
+    content: "☰";
+    color: var(--main-color2);
+}
+
+#menu.open::before {
+    content: 'X';
+    color: var(--main-color2);
+}
+
+.open a {
+    display: block;
+}
+
 .navigation {
     list-style-type: none;
+    font-family: var(--main-font);
+    display: none;
+    flex-direction: column;
+}
 
+.navigation.open {
+    display: flex;
 }
 
 .navigation a {
     text-decoration: none;
     padding: 10px;
+    border: var(--border);
+    background-color: var(--background-color2);
 }
 
-.navigation a .active {
+.navigation a.active {
     text-decoration: underline;
+    color: var(--background-color2);
+    background-color: var(--main-color1);
+}
+
+.navigation a:hover {
+    color: var(--background-color2);
+    background-color: var(--main-color2);
 }
 
 .logo {
-    border: 1px solid var(--border);
+    border: var(--border);
     background-color: var(--background-color2);
     padding: 10px;
+    max-width: 100px;
+    width: 100%;
+    font-size: 0.6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo img {
+    height: 24px;
+    width: 24px;
 }
 
 .title {
@@ -54,16 +113,132 @@ header div {
 
 .hero {
     width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.view {
+    margin: 1rem auto;
+    border: var(--border);
+    padding: 0.5rem;
+    background-color: var(--background-color1);
+    text-align: center;
+}
+
+.view button {
+    padding: 1rem;
+    font-weight: 700;
+    font-family: var(--main-font);
+    color: var(--main-color1);
+}
+
+.grid .cards {
+    border: var(--border);
+    padding: 0.5rem;
+    background-color: var(--background-color1);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5px;
+
+}
+
+#cards {
+    min-height: 400px;
+}
+
+.star-level-1 {
+    color: #B87333;
+}
+
+.star-level-2 {
+    color: #C0C0C0;
+}
+
+.star-level-3 {
+    color: #FFD700;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5px;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    border: var(--border);
+}
+
+.grid .card {
+    border: var(--border);
+}
+
+.grid .card-top {
+    display: flex;
+    flex-direction: row;
+    border-bottom: var(--border);
+    place-items: center;
+    background-color: var(--background-color2);
+}
+
+.grid .card-bottom {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color1);
+}
+
+.grid section {
+    text-align: center;
+}
+
+.grid img {
+    border: var(--border);
+}
+
+.grid h2 {
+    font-size: 1.2rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+}
+
+.list section > * {
+    margin: 0 1rem;
+}
+
+.list section img{
+    display: none;
+}
+
+.list section:nth-child(even) {
+    background-color: var(--background-color2);
+}
+
+.list section:nth-child(odd) {
+    background-color: var(--background-color1);
 }
 
 footer {
     display: grid;
     font-size: .6rem;
-}
-
-footer img {
-    height: 24px;
-    width: 24px;
+    align-items: center;
+    border: var(--border);
+    background-color: var(--background-color2);
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
 }

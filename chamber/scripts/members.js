@@ -10,6 +10,8 @@ async function getMemberData() {
 const displayMembers = (members) => {
     members.forEach((member) => {
         let card = document.createElement("section");
+        let cardTop = document.createElement("div");
+        let cardBottom = document.createElement("div");
         let name = document.createElement("h2");
         let logo = document.createElement("img");
         let address = document.createElement("p");
@@ -17,6 +19,9 @@ const displayMembers = (members) => {
         let website = document.createElement("p");
         let stars = document.createElement("div");
 
+        card.classList.add('card')
+        cardTop.classList.add('card-top');
+        cardBottom.classList.add('card-bottom');
         name.textContent = member.name;
         logo.setAttribute('src', member.image);
         logo.setAttribute('alt', member.imagealt);
@@ -25,7 +30,7 @@ const displayMembers = (members) => {
         logo.setAttribute('width', '48');
         address.innerHTML = `<strong>Address:</strong> ${member.address}`;
         number.innerHTML = `<strong>Phone Number:</strong> ${member.phonenum}`;
-        website.innerHTML = `<strong>Website:</strong> <a href="https://${member.website} title="${member.name}</a>`;
+        website.innerHTML = `<strong>Website:</strong> ${member.website}`;
 
         const level = parseInt(member.level);
         for (let i = 0; i < level; i++) {
@@ -35,12 +40,14 @@ const displayMembers = (members) => {
             stars.appendChild(star);
         }
 
-        card.appendChild(name);
-        card.appendChild(logo);
-        card.appendChild(address);
-        card.appendChild(number);
-        card.appendChild(website);
-        card.appendChild(stars);
+        cardTop.appendChild(logo);
+        cardTop.appendChild(name);
+        cardBottom.appendChild(address);
+        cardBottom.appendChild(number);
+        cardBottom.appendChild(website);
+        cardBottom.appendChild(stars);
+        card.appendChild(cardTop);
+        card.appendChild(cardBottom);
         cards.appendChild(card);
     });
 }
