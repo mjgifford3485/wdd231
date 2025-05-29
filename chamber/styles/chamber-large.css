@@ -1,9 +1,13 @@
 @media (min-width: 480px) {
     .navigation {
-            display: flex;
-            flex-direction: row;
-        }
-    
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navigation a {
+        font-size: .8rem;
+    }
+
     #menu {
         display: none;
     }
@@ -22,9 +26,8 @@
         max-width: 900px;
         display: flex;
         flex-direction: row;
-        justify-content:  space-between;
+        justify-content: space-between;
         align-items: center;
         font-size: 0.8rem;
     }
-
 }

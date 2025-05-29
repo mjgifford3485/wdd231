@@ -56,9 +56,9 @@
         },
         {
             "name": "Renton History Museum",
-            "address": "235 Mill Ave, Renton, Wa S98057",
+            "address": "235 Mill Ave, Renton, Wa 98057",
             "phonenum": "425-555-6440",
-            "website": "www.rentonhistorymuseum.gov",
+            "website": "www.rhm.gov",
             "image": "https://mjgifford3485.github.io/wdd231/chamber/images/museum.webp",
             "imagealt": "logo of a museum",
             "level": "2"

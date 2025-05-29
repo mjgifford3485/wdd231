@@ -1,0 +1,99 @@
+.cta {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    margin: .6rem;
+    padding: .6rem;
+    font-size: .6rem;
+    background-color: var(--background-color1);
+    border: var(--border);
+    color: var(--main-color1);
+    text-decoration: none;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.current-events {
+    border: var(--border);
+}
+
+.current-weather {
+    border: var(--border);
+}
+
+.forecast {
+    border: var(--border);
+    padding: 1rem;
+}
+
+.spotlight {
+    border: var(--border);
+}
+
+
+
+.forecast-info img {
+    border: var(--border);
+}
+
+#forecast-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.forecast-day {
+    border: var(--border);
+    padding: 0.5rem;
+    font-size: 0.85rem;
+    line-height: 0.8;
+    flex: 1;
+}
+
+.forecast-day h3 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1rem;
+}
+
+.forecast-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+.forecast-info img {
+    margin: 0;
+}
+
+.forecast-temp p {
+    margin: 0.1rem 0;
+    font-size: 0.85rem;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    font-size: 0.7rem;
+    text-align: center;
+    margin-top: 0.2rem;
+}
+
+.weather {
+    display: flex;
+    flex-direction: row;
+}
+
+.weather-info,
+.forecast-info {
+    line-height: 0.6;
+    font-size: 0.8rem;
+}
