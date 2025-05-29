@@ -31,7 +31,7 @@
             "name": "Queen and Rabbits Appliances",
             "address": "4608 NE Sunset Blvd. Renton, Wa 98056",
             "phonenum": "(425) 555-0600",
-            "website": "www.queenandrabbits.com",
+            "website": "www.qandr.com",
             "image": "https://mjgifford3485.github.io/wdd231/chamber/images/bunny.webp",
             "imagealt": "logo of a bunny wearing a crown",
             "level": "1"
@@ -49,7 +49,7 @@
             "name": "3 Amigos Maxican Restaurant",
             "address": "10707 SE Carr Rd, Renton, WA 98055",
             "phonenum": "(425) 555-9104",
-            "website": "www.3amigosrestaurant.com",
+            "website": "www.3amigos.com",
             "image": "https://mjgifford3485.github.io/wdd231/chamber/images/amigos.webp",
             "imagealt": "logo of three sombreros",
             "level": "1"

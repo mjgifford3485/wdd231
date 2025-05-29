@@ -75,6 +75,7 @@
     border-bottom: var(--border);
     place-items: center;
     background-color: var(--background-color2);
+    min-height: 100px;
 }
 
 .grid .card-bottom {

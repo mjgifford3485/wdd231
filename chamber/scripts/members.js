@@ -29,7 +29,7 @@ const displayMembers = (members) => {
         logo.setAttribute('height', '48');
         logo.setAttribute('width', '48');
         address.innerHTML = `<strong>Address:</strong> ${member.address}`;
-        number.innerHTML = `<strong>Phone Number:</strong> ${member.phonenum}`;
+        number.innerHTML = `<strong>Number:</strong> ${member.phonenum}`;
         website.innerHTML = `<strong>Website:</strong> ${member.website}`;
 
         const level = parseInt(member.level);
