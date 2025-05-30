@@ -1,0 +1,13 @@
+*{box-sizing: border-box;}
+
+::backdrop {
+    background: rgb(255 0 0 / 70%);
+}
+
+openButton2::backdrop {
+    background: rgb(255, 105, 0 / 70%);
+}
+
+openButton3::backdrop {
+    background: rgb(225 225 0 / 70%);
+}

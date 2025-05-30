@@ -106,3 +106,4 @@ buttons.forEach(button => {
 });
 
 displayCourses();
+

@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Renton Chamber of Commerce: Home</title>
+    <title>Renton Chamber of Commerce: Directory</title>
     <meta name="author" content="Matthew Gifford">
-    <meta name="description" content="The landing page for the Chamber of Commerce site.">
-    <meta property="og:title" content="Renton Chamber of Commerce: Home">
-    <meta property="og:description" content="The landing page for the Chamber of Commerce site.">
+    <meta name="description" content="A directory of businesses associated with the Chamber of Commerce.">
+    <meta property="og:title" content="Renton Chamber of Commerce: Directory">
+    <meta property="og:description" content="A directory of businesses associated with the Chamber of Commerce.">
     <meta property="og:image" content="https://mjgifford3485.github.io/wdd231/chamber/images/chamberofcommerce.JPG">
     <meta property="og:url" content="https://mjgifford3485.github.io/wdd231/chamber/directory.html">
     <link rel="icon" href="images/favicon.ico">
@@ -17,13 +17,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Red+Hat+Text:wght@600&display=swap"
         rel="stylesheet">
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/members.js" defer></script>
     <script src="scripts/hambutton.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/view.js" defer></script>
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chamber-large.css">
-    <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/home-large.css">
+    <link rel="stylesheet" href="styles/directory.css">
 </head>
 
 <body>
@@ -33,12 +32,12 @@
                 <div class="title">
                     <p>Renton Chamber of Commerce</p>
                 </div>
-                <img src="images/pine-tree.webp" alt="pine tree logo" height="48" width="48">
+                <img src="images/pine-tree.png" alt="pine tree logo" height="48" width="48">
             </div>
             <button id="menu" aria-label="navigation menu button"></button>
             <nav>
                 <ul class="navigation">
-                    <li><a href="index.html" title="home" class="active">Home</a></li>
+                    <li><a href="index.html" title="home">Home</a></li>
                     <li><a href="directory.html" title="directory">Directory</a></li>
                     <li><a href="join.html" title="join">Join</a></li>
                     <li><a href="discover.html" title="discover">Discover</a></li>
@@ -47,44 +46,10 @@
         </div>
         <div class="hero">
             <img src="images/mt-rainier.webp" alt="Mt. Rainier" height="243" width="900">
-            <a href="join.html" class="cta">Click here now to join!</a>
         </div>
     </header>
     <main>
-        <h1>Renton Chamber of Commmerce: Home</h1>
-        <div class="main-container">
-            <section class="current-events">
-                <h2>Current Events</h2>
-                <ul>
-                    <li>6/4 Community Center closed for cleaning</li>
-                    <li>6/18 Shakespeare in the Park</li>
-                    <li>Farmers Market every Thursday from 12PM-8PM</li>
-                </ul>
-            </section>
-            <section class="current-weather">
-                <h2>Current Weather</h2>
-                <div class="weather">
-                    <img id="weather-icon" src="images/placeholder.png" alt="weather-icon placeholder">
-                    <div class="weather-info">
-                        <p id="current-temp"></p>
-                        <p id="description"></p>
-                        <p id="high-temp"></p>
-                        <p id="low-temp"></p>
-                        <p id="humidity"></p>
-                        <p id="sunrise"></p>
-                        <p id="sunset"></p>
-                    </div>
-                </div>
-            </section>
-            <section class="forecast">
-                <h2>3 Day Forecast</h2>
-                <div id="forecast-container"></div>
-            </section>
-            <section class="spotlight">
-                <h2>Company Spotlight</h2>
-                <div id="spotlight-cards" class="spotlight-cards"></div>
-            </section>
-        </div>
+        <h1>Renton Chamber of Commmerce: Join</h1>
     </main>
     <footer>
         <div>
