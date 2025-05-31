@@ -35,6 +35,7 @@ const displaySpotlightMembers = (members) => {
         logo.setAttribute('loading', 'lazy');
         logo.setAttribute('height', '48');
         logo.setAttribute('width', '48');
+        logo.setAttribute('loading', 'lazy');
         address.innerHTML = `<strong>Address:</strong> ${member.address}`;
         number.innerHTML = `<strong>Number:</strong> ${member.phonenum}`;
         website.innerHTML = `<strong>Website:</strong> ${member.website}`;
