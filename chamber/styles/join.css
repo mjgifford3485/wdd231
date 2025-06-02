@@ -23,6 +23,11 @@ form select {
     height: 25px;
 }
 
+label {
+    font-family: var(--main-font);
+    color: var(--main-color2);
+}
+
 .membership-level {
     display: flex;
     flex-direction: column;
@@ -30,12 +35,15 @@ form select {
 }
 
 button {
-    width: 100px;
-    height: 25px;
+    background-color: var(--background-color2);
+    color: var(--main-color2);
+    height: 44px;
 }
 
 form button {
+    min-width: 100px;
     margin-bottom: .75rem;
+    color: var(--main-color1);
 }
 
 .card-container {
