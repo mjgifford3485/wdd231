@@ -17,12 +17,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Red+Hat+Text:wght@600&display=swap"
         rel="stylesheet">
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/members.js" defer></script>
     <script src="scripts/hambutton.js" defer></script>
-    <script src="scripts/view.js" defer></script>
+    <script src="scripts/level.js" defer></script>
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chamber-large.css">
     <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-large.css">
 </head>
 
 <body>
@@ -50,9 +51,59 @@
     </header>
     <main>
         <h1>Renton Chamber of Commmerce: Join</h1>
-        <form method="get" action="thankyou.html">
+        <div class="membership-form">
+            <form method="get" action="thankyou.html">
+                <label>First Name: </label>
+                <input type="text" required name="first" title="first-name" autocomplete="given-name">
+                <label>Last Name: </label>
+                <input type="text" required name="last" title="last-name" autocomplete="family-name">
+                <label>Organization Title: </label>
+                <input type="text" name="title" title="organization-title" autocomplete="organization-title">
+                <label>Email Address: </label>
+                <input type="email" required name="email" title="email" autocomplete="email" placeholder="youremail@email.com">
+                <label>Mobile Phone Number: </label>
+                <input type="tel" required name="number" title="mobile-number" autocomplete="tel">
+                <label>Business/Organization Name: </label>
+                <input type="text" required name="business" title="business-name" autocomplete="organization">
+                <h3>Membership Level</h3>
+                <div class="membership-level">
+                    <label><input type="radio" class="np" name="membership-level " value="NonProfit">Non-Profit</label>
+                    <label><input type="radio" class="bronze" name="membership-level " value="Bronze">Bronze</label>
+                    <label><input type="radio" class="silver" name="membership-level " value="Silver">Silver</label>
+                    <label><input type="radio" class="gold" name="membership-level " value="Gold">Gold</label>
+                </div>
+                <lable for="description"><strong>Business/Organization Description</strong></lable>
+                <textarea id="description" name="description" title="description" rows="5"></textarea>
+                <label><input type="hidden" name="timestamp" id="timestamp"></label>
+                <button>Join Now!</button>
+            </form>
+            <div class="card-container">
+                <div class="np-card" id="np-card">
+                    <h3>Non-Profit Membership Level</h3>
+                    <button id="openButton1">Learn More</button>
+                </div>
+                <div class="bronze-card" id="bronze-card">
+                    <h3>Bronze Membership Level</h3>
+                    <button id="openButton2">Learn More</button>
+                </div>
+                <div class="silver-card" id="silver-card">
+                    <h3>Silver Membership Level</h3>
+                    <button id="openButton3">Learn More</button>
+                </div>
+                <div class="gold-card" id="gold-card">
+                    <h3>Gold Membership Level</h3>
+                    <button id="openButton4">Learn More</button>
+                </div>
+                <dialog id="levelInfo">
+                    <h3>Benefits</h3>
+                    <ul>
 
-        </form>
+                    </ul>
+                    <p></p>
+                    <button id="closeButton">Close</button>
+                </dialog>
+            </div>
+        </div>
     </main>
     <footer>
         <div>
@@ -72,7 +123,7 @@
             <p>Matthew Gifford</p>
             <p>&#xa9; <span id="currentyear"></span> Renton Chamber of Commerce</p>
             <p>Last Modified: <span id="lastModified"></span></p>
-        </div>
+        </div>>
     </footer>
 </body>
 

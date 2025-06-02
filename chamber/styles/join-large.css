@@ -1,0 +1,17 @@
+@media (min-width: 480px) {
+    .membership-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    form {
+        padding: 0 200px 0 20px;
+    }
+
+    .card-container {
+        padding: 3rem;
+    }
+
+    
+}
