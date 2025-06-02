@@ -101,7 +101,7 @@ header {
     flex-direction: column;
     align-items: center;
     background-color: var(--background-color2);
-    font-size: 0.6rem;
+    font-size: 0.8rem;
 }
 
 .title h1,
@@ -130,7 +130,7 @@ main {
 
 footer {
     display: grid;
-    font-size: .6rem;
+    font-size: .8rem;
     align-items: center;
     border: var(--border);
     background-color: var(--background-color2);
