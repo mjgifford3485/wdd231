@@ -51,11 +51,14 @@ form button {
     flex-direction: column;
     gap: 1.5rem;
     background-color: var(--background-color1);
-    
+
     border: var(--border);
 }
 
-.np-card, .bronze-card, .silver-card, .gold-card {
+.np-card,
+.bronze-card,
+.silver-card,
+.gold-card {
     border: var(--border);
     padding: .75rem;
     text-align: center;
@@ -66,20 +69,22 @@ form button {
 @keyframes breathe {
     0% {
         transform: scale(1);
-        box-shadow: 0 0 5px rgba(0, 0, 0, .1) ;
     }
+
     50% {
         transform: scale(1.15);
-        box-shadow: 0 0 15px rgba(0, 0, 0, .15);
     }
+
     100% {
         transform: scale(1);
-        box-shadow: 0 0 5px rgba(0, 0, 0, .1);
     }
 
 }
 
-#np-card, #bronze-card, #silver-card, #gold-card {
+#np-card,
+#bronze-card,
+#silver-card,
+#gold-card {
     animation: breathe 2s ease-in-out infinite;
     transition: transform 0.3s ease;
 }
