@@ -1,0 +1,21 @@
+:root {
+    --main-color1: #153C89;
+    --main-color2: #722A08;
+    --background-color1: #DADAD9;
+    --background-color2: #ACECDC;
+    --border: 1px solid black;
+    --header-font: "Pattaya", sans-serif;
+    --main-font: "Red Hat Text", sans-serif;
+}
+
+.discover1,
+.discover2,
+.discover3,
+.discover4,
+.discover5,
+.discover6,
+.discover7,
+.discover8 {
+    border: var(--border);
+}
+

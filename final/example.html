@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tabletop RPG - Fantasy Adventure Dark Theme</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Uncial+Antiqua&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        /* Fantasy Adventure (Dark Theme) Colors */
+        :root {
+            --color-bg: #1e1e2f;
+            /* dark navy/purple */
+            --color-bg2: #27273f;
+            --color-primary: #c084fc;
+            /* lavender */
+            --color-secondary: #f4f4f5;
+            /* very light gray (text) */
+            --color-highlight: #22d3ee;
+            /* aqua blue */
+            --color-header: #eab308;
+            /* gold */
+            --color-button-hover: #9333ea;
+            /* darker lavender */
+            --color-border: #7c6e02;
+            /* muted navy border */
+        }
+
+        /* Base styles */
+        body {
+            margin: 0;
+            font-family: 'Merriweather', serif;
+            background-color: var(--color-bg2);
+            color: var(--color-secondary);
+            line-height: 1.6;
+            padding: 2rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Uncial Antiqua', serif;
+            color: var(--color-header);
+            margin-bottom: 0.5rem;
+            text-align: center;
+            letter-spacing: 0.05em;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-top: 1rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-top: 2rem;
+        }
+
+        p {
+            max-width: 600px;
+            margin: 0 auto 1.5rem;
+            font-size: 1.125rem;
+            color: var(--color-secondary);
+            text-align: center;
+        }
+
+        a {
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--color-highlight);
+            text-decoration: underline;
+        }
+
+        /* Button */
+        .btn {
+            background-color: var(--color-primary);
+            color: var(--color-bg2);
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1.125rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 700;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+            margin-top: 1rem;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: var(--color-button-hover);
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            width: 100%;
+            border: 2px solid var(--color-border);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            background-color: white;
+            /* slightly lighter dark for container background */
+        }
+
+        /* Footer */
+        footer {
+            margin-top: auto;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: var(--color-secondary);
+            text-align: center;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Enter a World of Imagination</h1>
+        <p>
+            Discover the magic of tabletop roleplaying games — where dice roll, stories unfold, and adventures come
+            alive.
+        </p>
+
+        <h2>What is a TTRPG?</h2>
+        <p>
+            Tabletop roleplaying games (TTRPGs) are collaborative storytelling games where players create characters,
+            explore worlds, and shape narratives together.
+        </p>
+
+        <h2>Why Play?</h2>
+        <p>
+            Boost your creativity, bond with friends, and embark on epic quests. No two games are ever the same!
+        </p>
+
+        <a href="#join" class="btn">Join the Adventure</a>
+    </div>
+
+    <footer>
+        &copy; 2025 Tabletop RPG Adventures
+    </footer>
+</body>
+
+</html>

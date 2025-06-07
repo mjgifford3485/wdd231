@@ -1,0 +1,96 @@
+:root {
+    --primary-background: #1e1e2f;
+    --secondary-background: #27273f;
+    --header: #eab308;
+    --primary: #f4f4f5;
+    --secondary: #cca5f3;
+    --hover: #6400c2;
+    --highlight: #5cfff4;
+    --header-font: "Uncial Antiqua", system-ui;
+    --text-font: "Merriweather", serif;
+    --border: 2px solid var(--header);
+    --border-radius: 20px;
+}
+
+.primary-background {
+    color: var(--primary-background);
+    background-color: var(--highlight);
+    padding: 0 5px 0 5px;
+}
+
+.secondary-background {
+    color: var(--secondary-background);
+    background-color: var(--highlight);
+    padding: 0 5px 0 5px;
+}
+
+.header {
+    color: var(--header);
+}
+
+.primary {
+    color: var(--primary);
+}
+
+.secondary {
+    color: var(--secondary);
+}
+
+.hover {
+    color: var(--hover);
+    background-color: var(--highlight);
+    padding: 0 5px 0 5px;
+}
+
+.highlight {
+    color: var(--highlight);
+}
+
+.header-font {
+    font-family: var(--header-font);
+}
+
+.text-font {
+    font-family: var(--text-font);
+}
+
+body {
+    background-color: var(--secondary-background);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--primary-background);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    margin: 50px;
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--header);
+    font-family: var(--header-font);
+}
+
+p {
+    color: var(--primary);
+    font: var(--text-font);
+}
+
+button {
+    color: var(--secondary-background);
+    background-color: var(--secondary);
+}
+
+button:hover {
+    color: var(--highlight);
+    background-color: var(--hover);
+}
