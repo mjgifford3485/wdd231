@@ -20,7 +20,9 @@
     "name"
     "image"
     "description"
-    "address";
+    "address"
+    "button";
+    
 }
 
 #placeCards h2 {
@@ -43,4 +45,10 @@
 #placeCards address {
     grid-area: address;
     color: var(--main-color2);
+}
+
+#placeCards button {
+    width: 200px;
+    padding: 5px;
+    margin: 5px;
 }

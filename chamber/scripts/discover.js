@@ -21,6 +21,9 @@ function displayPlaceCards(places) {
         const description = document.createElement('p')
         description.innerText = place.description
         card.appendChild(description)
+        const button = document.createElement('button')
+        button.innerText = "Learn More"
+        card.appendChild(button)
 
         showPlaceCards.appendChild(card)
     })
