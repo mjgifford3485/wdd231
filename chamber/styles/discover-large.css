@@ -12,6 +12,12 @@
         width: 200px;
     }
 
+    #placeCards div:hover {
+        transform: scale(1.2);
+        transition: transform 0.3s ease;
+        box-shadow: 0 0 50px #333;
+    }
+
     #placeCards h2 {
         margin: 0;
     }
