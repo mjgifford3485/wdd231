@@ -8,14 +8,39 @@
     --main-font: "Red Hat Text", sans-serif;
 }
 
-.discover1,
-.discover2,
-.discover3,
-.discover4,
-.discover5,
-.discover6,
-.discover7,
-.discover8 {
+#placeCards div {
     border: var(--border);
+    border-radius: 20px;
+    margin: 20px;
+    background-color: var(--background-color1);
+    overflow: hidden;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "image"
+    "description"
+    "address";
 }
 
+#placeCards h2 {
+    grid-area: name;
+    color: var(--main-color1);
+    background-color: var(--background-color2);
+    padding: 10px;
+}
+
+#placeCards img {
+    height: 200px;
+    grid-area: image;
+}
+
+#placeCards p {
+    grid-area: description;
+    color: var(--main-color2);
+}
+
+#placeCards address {
+    grid-area: address;
+    color: var(--main-color2);
+}

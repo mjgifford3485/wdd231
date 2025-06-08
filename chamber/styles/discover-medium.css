@@ -1,0 +1,17 @@
+@media (min-width: 600px) {
+    #placeCards div {
+        border: var(--border);
+        padding: 0;
+        display: grid;
+        grid-template-areas: 
+        "image name"
+        "image description"
+        "image address";
+    }
+
+    #placeCards img {
+        padding-right: 20px;
+    }
+
+    
+}

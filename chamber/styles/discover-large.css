@@ -1,0 +1,26 @@
+@media (min-width: 1000px) {
+    #placeCards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #placeCards div {
+        line-height: 1;
+    }
+
+    #placeCards img {
+        width: 200px;
+    }
+
+    #placeCards h2 {
+        margin: 0;
+    }
+
+    #placeCards p {
+        margin: 0;
+    }
+
+    #placeCards address {
+        margin: 0;
+    }
+}
