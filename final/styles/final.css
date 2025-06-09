@@ -1,0 +1,13 @@
+:root {
+    --primary-background: #1e1e2f;
+    --secondary-background: #27273f;
+    --header: #eab308;
+    --primary: #f4f4f5;
+    --secondary: #cca5f3;
+    --hover: #6400c2;
+    --highlight: #5cfff4;
+    --header-font: "Uncial Antiqua", system-ui;
+    --text-font: "Merriweather", serif;
+    --border: 2px solid var(--header);
+    --border-radius: 20px;
+}
