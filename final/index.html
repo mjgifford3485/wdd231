@@ -1,17 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabletop RPG Adventures</title>
     <meta name="author" content="Matthew Gifford">
     <meta name="description" content="This is the homepage of a website describing tabletop roleplaying games.">
-    <meta property="og:title" content="Tabeltop RPG Adventures: Home">
+    <meta property="og:title" content="Tabletop RPG Adventures: Home">
     <meta property="og:description" content="This is the homepage of a website describing tabletop roleplaying games.">
-    <meta property="og:image" content="https://mjgifford3485.github.io/wdd231/chamber/images/chamberofcommerce.JPG">
+    <meta property="og:image" content="https://mjgifford3485.github.io/wdd231/final/images/banner.webp">
     <meta property="og:url" content="https://mjgifford3485.github.io/wdd231/final/index.html">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:opsz@18..144&family=Uncial+Antiqua&display=swap"
+        rel="stylesheet">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/gamecards.js" type="module"></script>
+    <link rel="stylesheet" href="styles/final.css">
+    <link rel="stylesheet" href="styles/final-large.css">
 </head>
+
 <body>
-    
+    <div class="body-container">
+        <header>
+            <div class="header-bar">
+                <div class="logo">
+                    <img src="images/dice-logo.webp" srcset="images/dice-logo@2x.webp 2x" alt="dice logo" width="72"
+                        height="54">
+                    <p>Tabletop RPG Adventures!</p>
+                </div>
+                <button id="menu" aria-label="navigation menu button"></button>
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="index.html" title="home" class="active">Home</a></li>
+                        <li><a href="game-details.html" title="game details">Game Details</a></li>
+                        <li><a href="character.html" title="character">Character Creation</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hero">
+                <img src="images/banner-small.webp" srcset="images/banner-medium.webp 800w, images/banner-large.webp 1200w"
+                    sizes="(max-width: 600px) 100vw, 800px" alt="assorted dice on a table">
+                <a href="character.html" class="cta">Create Your Character Now!</a>
+            </div>
+        </header>
+        <main>
+            <div class="main-container">
+                <h1>Welcome to Adventure!</h1>
+                <p>Congratulations!  You are about to embark on a world of adventure.  Maybe you heard about tabletop roleplaying games from a friend.  Or maybe you've watched a movie or played a video game based on a tabletop rpg.  Whatever the reason, you're here now.  This webiste is designed to provide more information including:</p>
+                <ul>
+                    <li>What exactly is a tabletop roleplaying game?</li>
+                    <li>What do I need to play?</li>
+                    <li>How do I find others to play?</li>
+                    <li>What is a GM (Game Master)</li>
+                    <li>What types of games are available?</li>
+                    <li>What kind of things should I think about when creating a character?</li>
+                </ul>
+                <h2>What exactly is a tabletop roleplaying game?</h2>
+                <p>By now, you've heard the term tabletop roleplaying game (TTRPG for short) thrown around a lot, but what exactly is a ttrpg? Tabletop roleplaying games (TTRPGs) are interactive storytelling games where players create characters and work together to explore imaginary worlds. Guided by a set of rules and a Game Master (GM), players describe their actions, solve challenges, and make decisions that shape the story.</p>
+                <h2>What do you need to play a TTRPG?</h2>
+                <p>TTRPGs require 3 things, rulebooks, dice, and imagination.  If you are new, the GM (person who runs the game) will probably provide those, or you can always find free resources online to at least get you started.  What dice you need depends on what game you are playing.  Anybody who has played Monopoly or Yatzhee, or any other board game, is used to a 6 sided die.  Some TTRPGs also use 6 sided die exclusively.  However, most TTRPGs use non standard dice, or dice with more or less sides than you would find in a standard board game.  Dice can be bought pretty cheaply at online retailers such as Amazon or your local gaming store.  There are also free dice rolling programs online that will allow you to randomly generate a number to simulate a dice roll. Finally, imagination; you decide decide what kind of character you want to play, what his/her motivations, personality, and abilities are.  You decide what your character does and how they interact with the world created by the GM.</p>
+                <h2>Where do I find others to play?</h2>
+                <p>There are many online resources when looking for a game.   Websites like <a href="https://roll20.net/welcome" title="Roll20">Roll20</a> can help you find and play with an online group.  GMs looking for players will also post notices in local gaming stores.</p>
+                <h2>What is a GM (Game Master)?</h2>
+                <p>Players control the actions of their own characters.  The GM controls everything else.  They create the world, set the scenario, enforce the rules, and play all the characters not controlled by players (Non-Player Characters, or NPCs for short).</p>
+                <h2>What types of games are available?</h2>
+                <p>Most people are familiar with Dungeons and Dragons, but there are many different types of games available.  There are other fantasy games like Dungeons and Dragons, but there are also games set in the future, or set in modern day.  Some games are set in outerspace or in galaxies far, far away.  There are games about vampires and werewolves.  You can play in a game as a superhero or super villain.  Basically, any scenario you can think of, there is most likely a game that'll match. <a href="game-details.html" title="game details"> Click here for a list of some of the most popular games available</a>, including more information about those games.</p>
+                <h2>What kind of things should I think about when creating a character?</h2>
+                <p>The first thing you need to know when creating a character is the setting.  A character for a fantasy setting will be very different from a character in a dystopian future type game.  Then you will need to figure out what kind of personality your character has, what their motivations are and what you want them to be able to do.  <a href="character.html" title="character creation">Click here for prompts</a> to help with creating a character.</p>
+            </div>
+        </main>
+        <footer>
+            <p>©<span id="currentyear"></span> ⚅ Matthew Gifford ⚅ Washington</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+            <a href="attributions.html">Attributions</a>
+        </footer>
+    </div>
 </body>
+
 </html>

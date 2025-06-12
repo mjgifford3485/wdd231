@@ -1,0 +1,25 @@
+@media (min-width: 1000px) {
+    .header-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .body-container {
+        margin: 2.5rem;
+        padding: 2.5rem;
+    }
+
+    /* game-details page */
+
+    #gameCards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .game-card:hover {
+        transform: scale(1.2);
+        transition: transform 0.6s ease;
+        box-shadow: 0 0 500px var(--header);
+    }
+}

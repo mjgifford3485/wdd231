@@ -11,3 +11,274 @@
     --border: 2px solid var(--header);
     --border-radius: 20px;
 }
+
+body {
+    background-color: var(--secondary-background);
+    color: var(--primary);
+    font-family: var(--text-font);
+    cursor: url('../images/sword.cur'), auto;
+}
+
+.body-container {
+    background-color: var(--primary-background);
+    margin: .5rem;
+    border: var(--border);
+    border-radius: var(--border-radius);
+}
+
+h1, h2, h3, h4 {
+    color: var(--header);
+    font-family: var(--header-font);
+}
+
+header {
+    text-align: center;
+}
+
+.header-bar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    font-family: var(--header-font);
+    color: var(--header);
+}
+
+.hero {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.cta {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    margin: .6rem;
+    padding: .8rem;
+    font-size: .8rem;
+    color: var(--secondary-background);
+    background-color: var(--secondary);
+    border-radius: var(--border-radius);
+}
+
+.cta:hover,
+button:hover {
+    background-color: var(--hover);
+    color: var(--highlight);
+    cursor: pointer;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--main-color1);
+}
+
+#menu::before {
+    content: "☰";
+    color: var(--secondary);
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+#menu.open::before {
+    content: 'X';
+    color: var(--secondary);
+}
+
+.open a {
+    display: block;
+}
+
+.navigation {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation a,
+.main-container a,
+footer a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navigation a:hover,
+.main-container a:hover,
+footer a:hover {
+    color: var(--highlight);
+    cursor: pointer;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation a {
+    text-decoration: none;
+    padding: .6rem;
+    background-color: var(--background-color2);
+    font-size: .8rem;
+}
+
+.navigation a.active {
+    text-decoration: wavy underline;
+    color: var(--header);
+}
+
+.navigation a.active::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../images/d20.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-container ul {
+    list-style: "⚅ ";
+}
+
+.main-container p {
+    padding: 0 1.8rem 0 1.8rem;
+}
+
+footer {
+    text-align: center;
+    color: var(--secondary);
+    margin: 25px;
+    border-top: var(--border);
+}
+
+/* game-details page */
+
+.cover {
+    display: none;
+}
+
+#gameCards {
+    display: flex;
+    flex-direction: column;
+}
+
+.game-card {
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "setting"
+    "dice"
+    "experience"
+    "tone"
+    "publisher"
+    "button";
+    align-items: center;
+    background-color: var(--primary-background);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    margin: .5rem;
+    overflow: hidden;
+    padding: 0;
+    line-height: 1.0;
+}
+
+.game-card h2 {
+    grid-area: title;
+    text-align: center;
+}
+
+.setting {
+    grid-area: setting;
+}
+
+.dice {
+    grid-area: dice;
+}
+
+.experience {
+    grid-area: experience;
+}
+
+.tone {
+    grid-area: tone;
+}
+
+.publisher {
+    grid-area: publisher;
+}
+
+.game-card button {
+    grid-area: button;
+    background-color: var(--secondary);
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+}
+
+dialog {
+    padding: 2rem;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    background-color: var(--primary-background);
+    box-shadow: 0 0 500px var(--header);
+    max-width: 500px;
+    width: 90%;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+dialog p {
+    color: var(--primary);
+    font-family: var(--text-font);
+}
+
+#closeButton {
+    float: right;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer; 
+    color: var(--header);
+}
+
+.game-card button:hover,
+#closeButton:hover {
+    color: var(--highlight);
+    background-color: var(--hover);
+    cursor: pointer;
+}
+

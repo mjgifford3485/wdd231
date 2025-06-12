@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabletop RPG Adventures: Game Details</title>
+    <meta name="author" content="Matthew Gifford">
+    <meta name="description" content="This page provides a list of popular tabletop roleplaying games.">
+    <meta property="og:title" content="Tabeltop RPG Adventures: Game Details">
+    <meta property="og:description" content="This page provides a list of popular tabletop roleplaying games.">
+    <meta property="og:image" content="https://mjgifford3485.github.io/wdd231/final/images/banner.webp">
+    <meta property="og:url" content="https://mjgifford3485.github.io/wdd231/final/game-details.html">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:opsz@18..144&family=Uncial+Antiqua&display=swap"
+        rel="stylesheet">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/gamecards.js" type="module"></script>
+    <script src="scripts/summary.js" type="module"></script>
+    <link rel="stylesheet" href="styles/final.css">
+    <link rel="stylesheet" href="styles/final-medium.css">
+    <link rel="stylesheet" href="styles/final-large.css">
+</head>
+
+<body>
+    <div class="body-container">
+        <header>
+            <div class="header-bar">
+                <div class="logo">
+                    <img src="images/dice-logo.webp" srcset="images/dice-logo@2x.webp 2x" alt="dice logo" width="72"
+                        height="54">
+                    <p>Tabeltop RPG Adventures!</p>
+                </div>
+                <button id="menu" aria-label="navigation menu button"></button>
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="index.html" title="home">Home</a></li>
+                        <li><a href="game-details.html" title="game details" class="active">Game Details</a></li>
+                        <li><a href="character.html" title="character">Character Creation</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hero">
+                <img src="images/banner-small.webp"
+                    srcset="images/banner-medium.webp 800w, images/banner-large.webp 1200w"
+                    sizes="(max-width: 600px) 100vw, 800px" alt="assorted dice on a table">
+                <a href="character.html" class="cta">Create Your Chararacter Now!</a>
+            </div>
+        </header>
+        <main>
+            <div class="main-container">
+                <div id="gameCards"></div>
+                <dialog id="summaryCards">
+                    <form method="dialog">
+                        <button id="closeButton" aria-label="Close">&times;</button>
+                    </form>
+                    <h2 id="modalTitle">Title</h2>
+                    <p id="modalSummary"></p>
+                </dialog>
+            </div>
+        </main>
+        <footer>
+            <p>© <span id="currentyear"></span> ⚅ Matthew Gifford ⚅ Washington</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+            <a href="attributions.html">Attributions</a>
+        </footer>
+    </div>
+</body>
+
+</html>
