@@ -18,8 +18,8 @@
         rel="stylesheet">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/charactersheet.js"></script>
-    <script src="scripts/numsheets.js"></script>
+    <script src="scripts/charactersheet.js" defer></script>
+    <script src="scripts/numsheets.js" defer></script>
     <link rel="stylesheet" href="styles/final.css">
     <link rel="stylesheet" href="styles/final-medium.css">
     <link rel="stylesheet" href="styles/final-large.css">
@@ -30,7 +30,8 @@
         <header>
             <div class="header-bar">
                 <div class="logo">
-                    <img src="images/dice-logo.webp" srcset="images/dice-logo@2x.webp 2x" alt="dice logo" width="72" height="54">
+                    <img src="images/dice-logo.webp" srcset="images/dice-logo@2x.webp 2x" alt="dice logo" width="72"
+                        height="54">
                     <p>Tabeltop RPG Adventures!</p>
                 </div>
                 <button id="menu" aria-label="navigation menu button"></button>
@@ -38,19 +39,22 @@
                     <ul class="navigation">
                         <li><a href="index.html" title="home">Home</a></li>
                         <li><a href="game-details.html" title="game details">Game Details</a></li>
-                        <li><a href="character.html" title="character" class="active">Character Creation</a></li>
+                        <li><a href="character.html" title="character">Character Creation</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="hero">
-                <img src="images/banner-small.webp" srcset="images/banner-medium.webp 800w, images/banner-large.webp 1200w"
+                <img src="images/banner-small.webp"
+                    srcset="images/banner-medium.webp 800w, images/banner-large.webp 1200w"
                     sizes="(max-width: 600px) 100vw, 800px" alt="assorted dice on a table">
                 <a href="character.html" class="cta">Create Your Chararacter Now!</a>
             </div>
         </header>
         <main>
-            <div id="charSheet"></div>
-            <div id="numsheets"></div>
+            <div class="char-sheet">
+                <div id="charSheet"></div>
+                <div id="numsheets"></div>
+            </div>
         </main>
         <footer>
             <p>© <span id="currentyear"></span> ⚅ Matthew Gifford ⚅ Washington</p>

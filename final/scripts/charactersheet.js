@@ -14,9 +14,9 @@ ${backstory ? `
     <p><strong>${charName}'s backstory:</strong></p>
     <p>${backstory}</p>` : ''}
 ${motivations ? `
-    <p><strong>${charName}'s Motivations:</strong>
+    <p><strong>${charName}'s Motivations:</strong></p>
     <p>${motivations}</p>` : ''}
 ${relationships ? `
-    <p><strong>${charName}'s relationships:</p>
+    <p><strong>${charName}'s relationships:</strong></p>
     <p>${relationships}<p/>` : ''}
 `; 
