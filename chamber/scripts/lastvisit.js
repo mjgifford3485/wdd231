@@ -4,7 +4,7 @@ const visit = new Date();
 const lastVisit = localStorage.getItem("lastVisit")
 
 let message = ""
-
+    
 if (!lastVisit) {
     message = "Welcome! Let us know if you have any questions.";
 } else {

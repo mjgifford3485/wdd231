@@ -282,3 +282,55 @@ dialog p {
     cursor: pointer;
 }
 
+/* character page */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding: 25px;
+    margin: 5px;
+}
+
+form h3 {
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+form input[type="text"],
+form select,
+form textarea,
+form button,
+form select {
+    padding: 5px;
+    width: 250px;
+    color: var(--secondary-background);
+    background-color: var(--secondary);
+}
+
+form .gender {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+    align-items: flex-start;
+    gap: 25px;
+    color: var(--secondary);
+}
+
+form .generateButton {
+    margin: 0;
+}
+
+.error {
+    color: #ff8a8a;
+}
+
+form .submit {
+    margin-top: 25px;
+}
+
+.character-header {
+    text-align: center;
+}

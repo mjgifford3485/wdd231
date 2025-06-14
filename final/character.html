@@ -7,9 +7,11 @@
     <title>Tabletop RPG Adventures: Character Creation</title>
     <link rel="icon" href="images/favicon.ico">
     <meta name="author" content="Matthew Gifford">
-    <meta name="description" content="This page contains a fillable form with prompts to aid in coming up with ideas for character creation.">
+    <meta name="description"
+        content="This page contains a fillable form with prompts to aid in coming up with ideas for character creation.">
     <meta property="og:title" content="Tabeltop RPG Adventures: Character Creation">
-    <meta property="og:description" content="This page contains a fillable form with prompts to aid in coming up with ideas for character creation..">
+    <meta property="og:description"
+        content="This page contains a fillable form with prompts to aid in coming up with ideas for character creation..">
     <meta property="og:image" content="https://mjgifford3485.github.io/wdd231/final/images/banner.webp">
     <meta property="og:url" content="https://mjgifford3485.github.io/wdd231/final/character.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +21,8 @@
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/namegenerator.js" defer></script>
+    <script src="scripts/randomcards.js" type="module"></script>
+    <script src="scripts/summary.js" type="module"></script>
     <link rel="stylesheet" href="styles/final.css">
     <link rel="stylesheet" href="styles/final-medium.css">
     <link rel="stylesheet" href="styles/final-large.css">
@@ -29,7 +33,8 @@
         <header>
             <div class="header-bar">
                 <div class="logo">
-                    <img src="images/dice-logo.webp" srcset="images/dice-logo@2x.webp 2x" alt="dice logo" width="72" height="54">
+                    <img src="images/dice-logo.webp" srcset="images/dice-logo@2x.webp 2x" alt="dice logo" width="72"
+                        height="54">
                     <p>Tabeltop RPG Adventures!</p>
                 </div>
                 <button id="menu" aria-label="navigation menu button"></button>
@@ -42,37 +47,83 @@
                 </nav>
             </div>
             <div class="hero">
-                <img src="images/banner-small.webp" srcset="images/banner-medium.webp 800w, images/banner-large.webp 1200w"
+                <img src="images/banner-small.webp"
+                    srcset="images/banner-medium.webp 800w, images/banner-large.webp 1200w"
                     sizes="(max-width: 600px) 100vw, 800px" alt="assorted dice on a table" loading="lazy">
-                <a href="character.html" class="cta">Create Your Chararacter Now!</a>
             </div>
         </header>
         <main>
-            <div class="main-container">
-                <form id="character-form" method="get" action="thankyou.html">
-                    <h3>Player Name: </h3>
-                    <input type="text" required name="player-name" title="player-name" autocomplete="given-name">
-                    <label>Race</label>
-                    <select id="race" name="race" required>
-                        <option value="" disabled selected>Choose a race...</option>
-                        <option value="elf">Elf</option>
-                        <option value="dwarf">Dwarf</option>
-                        <option value="human">Human</option>
-                        <option value="halfling">Halfling</option>
-                        <option value="orc">Orc</option>
-                        <option value="tiefling">Tiefling</option>
-                        <option value="dragonborn">Dragonborn</option>
-                    </select>
-                    <div id="gender">
-                        <label><input type="radio" name="gender" value="male">Male</label>
+            <div class="creation">
+                <div class="character-header">
+                    <h2>Character Creation</h2>
+                    <p>Need some help coming up with a character? Fill out the form below to get started on your
+                        character. If you can't think of a character name, choose your race and gender and click the
+                        button to get a random character name.  Use the cards to get inspiration from some of the games available.</p>
+                </div>
+            </div>
+            <div class="form-container">
+                <form id="character-form" method="get" action="character-sheet.html">
+                    <h3>Player Name:</h3>
+                    <label for="player name"><input type="text" required name="player-name" title="player-name"
+                            autocomplete="given-name"></label>
+                    <h3>Race:</h3>
+                    <label>
+                        Select Race<br>
+                        <select id="race" name="race" required>
+                            <option value="" disabled selected>Choose a race...</option>
+                            <option value="elf">Elf</option>
+                            <option value="dwarf">Dwarf</option>
+                            <option value="human">Human</option>
+                            <option value="halfling">Halfling</option>
+                            <option value="orc">Orc</option>
+                            <option value="tiefling">Tiefling</option>
+                            <option value="dragonborn">Dragonborn</option>
+                        </select>
+                    </label>
+                    <h3>Gender:</h3>
+                    <div class="gender">
+                        <label><input type="radio" name="gender" value="male" required>Male</label>
                         <label><input type="radio" name="gender" value="female">Female</label>
                     </div>
-                    <button type="button" id="generateButton">Generate Name</button>
+                    <h3>Character Name: </h3>
                     <p id="errorMessage" class="error"></p>
-                    <label>Character Name: </label>
-                    <input type="text" id="charName" required name="char-name" title="char-name">
-                    <h3>Class</h3>
+                    <button type="button" id="generateButton" class="generateButton">Generate Name</button>
+                    <label for="charName"><input type="text" id="charName" required name="char-name"
+                            title="char-name"></label>
+                    <h3>Class:</h3>
+                    <label>
+                        Select Class<br>
+                        <select name="class" required>
+                            <option value="" disabled selected>Choose a class...</option>
+                            <option value="wizard">Wizard</option>
+                            <option value="hacker">Hacker</option>
+                            <option value="medic">Medic</option>
+                            <option value="cyberneticist ">Cyberneticist</option>
+                            <option value="fixer">Fixer</option>
+                            <option value="thief">Thief</option>
+                        </select>
+                    </label>
+                    <h3>Backstory:</h3>
+                    <label for="backstory"><textarea name="backstory" rows="5"
+                            placeholder="Use this space to write a backstory..."></textarea></label>
+                    <h3>Motivations:</h3>
+                    <label for="motivations"><textarea name="motivations" rows="5"
+                            placeholder="Use this space to explain what gets your character out of bed in the morning..."></textarea></label>
+                    <h3>Relationships:</h3>
+                    <label for="relationships"><textarea name="relationships" rows="5"
+                            placeholder="Use this space to describe your character's relationships(family, friends, enemies, etc)..."></textarea></label>
+                    <button class="submit" type="submit"><strong>Create your Character!</strong></button>
                 </form>
+                <div random-card-container>
+                    <div id="randomGameCards"></div>
+                    <dialog id="summaryCards">
+                        <form method="dialog">
+                            <button id="closeButton" aria-label="Close">&times;</button>
+                        </form>
+                        <h2 id="modalTitle">Title</h2>
+                        <p id="modalSummary"></p>
+                    </dialog>
+                </div>
             </div>
         </main>
         <footer>

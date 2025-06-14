@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabletop RPG Adventures: Character Creation</title>
+    <title>Tabletop RPG Adventures: Character Sheet</title>
     <meta name="author" content="Matthew Gifford">
-    <meta name="description" content="This page contains a fillable form with prompts to aid in coming up with ideas for character creation.">
-    <meta property="og:title" content="Tabeltop RPG Adventures: Character Creation">
-    <meta property="og:description" content="This page contains a fillable form with prompts to aid in coming up with ideas for character creation..">
+    <meta name="description" content="This page displays a completed character sheet.">
+    <meta property="og:title" content="Tabeltop RPG Adventures: Character Sheet">
+    <meta property="og:description" content="This page displays a completed character sheet.">
     <meta property="og:image" content="https://mjgifford3485.github.io/wdd231/final/images/banner.webp">
     <meta property="og:url" content="https://mjgifford3485.github.io/wdd231/final/character.html">
     <link rel="icon" href="images/favicon.ico">
@@ -18,7 +18,10 @@
         rel="stylesheet">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/charactersheet.js"></script>
+    <script src="scripts/numsheets.js"></script>
     <link rel="stylesheet" href="styles/final.css">
+    <link rel="stylesheet" href="styles/final-medium.css">
     <link rel="stylesheet" href="styles/final-large.css">
 </head>
 
@@ -45,7 +48,10 @@
                 <a href="character.html" class="cta">Create Your Chararacter Now!</a>
             </div>
         </header>
-        <main></main>
+        <main>
+            <div id="charSheet"></div>
+            <div id="numsheets"></div>
+        </main>
         <footer>
             <p>© <span id="currentyear"></span> ⚅ Matthew Gifford ⚅ Washington</p>
             <p>Last Modified: <span id="lastModified"></span></p>
