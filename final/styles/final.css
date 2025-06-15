@@ -179,8 +179,14 @@ footer a:hover {
 footer {
     text-align: center;
     color: var(--secondary);
-    margin: 25px;
     border-top: var(--border);
+}
+
+
+.demonstration-video {
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding: 5px;
 }
 
 /* game-details page */
